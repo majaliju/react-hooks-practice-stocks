@@ -1,6 +1,6 @@
 import React from "react";
 
-function SearchBar({sortStocks}) {
+function SearchBar({sortStocks, sortBy}) {
 
   return (
     <div>
@@ -10,7 +10,7 @@ function SearchBar({sortStocks}) {
           type="radio"
           value="Alphabetically"
           name="sort"
-          checked={null}
+          checked={sortBy === 'Alphabetically'}
           onChange={sortStocks}
         />
         Alphabetically
@@ -20,7 +20,7 @@ function SearchBar({sortStocks}) {
           type="radio"
           value="Price"
           name="sort"
-          checked={null}
+          checked={sortBy === 'Price'}
           onChange={sortStocks}
         />
         Price

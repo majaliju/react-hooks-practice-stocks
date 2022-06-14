@@ -72,7 +72,7 @@ function MainContainer() {
 
   return (
     <div>
-      <SearchBar sortStocks = {sortStocks}/>
+      <SearchBar sortStocks = {sortStocks} sortBy = {sortBy}/>
       <div className="row">
         <div className="col-8">
           <StockContainer 
